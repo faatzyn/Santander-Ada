@@ -1,0 +1,43 @@
+Git - Sistema de Versionamento de código
+    Salva snapshots do estado do projeto além do caminho;
+
+Comandos
+git init -> inicia um repositório git (.git);
+
+git status -> exibe os arquivos que deve modificações, podendo eles ser untracked, unmodified, modified, staged;
+    untracked -> ainda não foi rastreado;
+    unmodified -> arquivo não apresenta modificações de acordo com o repositório remoto;
+    modified -> apresenta alterações de acordo com o repositório remoto;
+    staged -> arquivo pronto para subir para o repositório remoto;
+
+git add .\nome do arquivo -> adiciona os arquivos para aqueles que vou subir no repositório remoto (staged);
+
+git diff -> Exibe quais foram as alterações nos arquivos;
+git diff --staged -> exibe as alterações nos arquivos que estão em staged;
+    removeu -> em vermelho;
+    acrescetou -> em verde;
+
+git commit -m "comentarios" -> Transfere o arwquivo como se fosse um arquivo a frente do rastreado no repositório remoto
+    movendo ele para unmodified, e passa a usar ele como referencia;
+
+git log -> trás um histórico dos últimos commits que foram feitos, exibe um hash;
+
+git restore .\nome do arquivo -> é uma maneira de voltar arquivos modificados, de modified para unmodified;
+git restore --staged .\nome do arquivo -> voltar para changes arquivos que estavam em staged para modified;
+
+git push -> salvo os arquivos que estavam em commit no repositório remoto;
+
+git pull -> baixa o repositório remoto e atualiza os arquivos;
+
+git fetch -> vai no repositório remoto e baixa tudo de lá, mas não adiciona nos arquivos,
+    pode-se rodar o git diff para ver essas diferenças;
+
+git branch 'nome' -> cria uma ramificação do projeto, permite que diversas pessoas trabalhem no projeto
+    sem interferir no trabalho de outra pessoa;
+
+git checkout 'branch' -> pula para a branch (ramificação);
+
+git checkout -b 'branch' -> cria uma nova branch e pula para ela;
+
+git merge 'branch' -> mergea (mistura) a branch com a atual branch que vc está utilizando
+    esse comando pode exibir conflitos -> alterações no mesmo arquivo, onde será necessário observação para correção do conflito;
