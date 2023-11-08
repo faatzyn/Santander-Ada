@@ -1,0 +1,46 @@
+Introdução
+
+Funções - Definições
+    * Relação
+        Conjutos Arbitrários A, B
+        Produto Cartesiano entra A e B -> (A,B), a E A; b E B;
+        Exemplo:
+            A = {1,2,3}, B = {4,6} ->
+            AxB = {
+                (1,4);(1;6);(2,4);(2,6);(3,4);(3,6)
+            }
+
+            Relação nada mais é do que um subconjunto dos conjuntos -> R C AxB
+
+    * Função
+        Relação especial, que satisfaz algumas propriedades
+        Relação (R) será uma Função se A e B todos elementos do conjunto A estejam relacionados com algum elemento do conjnto B
+
+        Função (f) : A -> B (relacionando elementos de A a B), sendo assim f(a -> cada valor de A) = b (b -> algum valor de B);
+
+        Contradomínio de f -> b -> a
+        
+        Imagem de f -> Im(f) = subconjunto do Contradomínio de f
+
+        Diagramas de Ven -> Maneira visual de representar conjuntos -> 
+            Circulos que se relacionam (ponto a ponto, cada valor com outro do Contradomínio)
+            Conectando elementos de a com elementos de b
+            Imagem fa função, que é um subconjunto do Contradomínio (B) -> 
+                apenas dos pontos que foram mapeados (descarta os que não foram)
+            
+    * Funções Injetoras
+        Quando os elementos da Imagem receberem uma única flechinha. (um único ponto de A);
+
+    * Funções Sobrejetoras
+        Quando os elementos da Imagem receberem flechinhas diferetens. (um único ponto B recebe diversos de A);
+        Funções quadráticas, em que 1 ponto de A sai 2 valores.
+        Exemplo
+            Conjunto A {-2,2} -> B { 4 }
+            f(a) -> X²
+            o Quadrado de qualquer valor de A dá como resultado o único valor de B;
+
+    * Funções Bijetoras
+        Funções que tem as mesmas propriedades das Funções Injetoras e Sobrejetoras ao mesmo tempo;
+        
+
+
