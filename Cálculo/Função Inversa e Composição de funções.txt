@@ -1,0 +1,53 @@
+Função Inversa e Composição de Funções
+
+Funções Inversas
+    f(x) qualquer, que relaciona f: R -> R, x -> f(x)
+    f-¹(x) -> função inversa, função que mapeia de volta toda a imagem para o domínio
+
+    * Nem toda f(x) tem inversa (funções não invertíveis);
+
+    * Para um função ser invertível se for uma função bijetora
+
+    f(x) = 2x+1, f-¹(x) = ? ->
+    y = 2x+1 -> (inverto domínio e contradomínio) x = 2y+1
+    sendo assim y = (x-1)/2
+
+    Gráfico função inversa, é um espelho tem como referencia a função identidade.
+    Função identidade (1,1),(2,2),(3,3)....
+    (Inverte os pontos, onde era x,y -> inverte para y,x mas apenas os valores, não o eixo)
+
+Composição de Funções
+    Função f e g.
+    f: A -> B -> Definida do conjunto A para o Conjunto B -> domínio A para contradomínio B
+    f: B -> C -> Definida do conjunto B para o Conjunto C -> domínio B para contradomínio C
+
+    g ° f -> g compoem f, onde a f(g(fx))
+
+    Exemplo: f(x) = 2x+1, g(x) = x²
+    g°f = g(f(x)) = (f(x))²
+    sendo assim: (2x+1)² -> (2x+1).(2x+1) -> 4x²+2x+2x+2 -> 4x²+4x+2
+    gof = 4x²+4x+2;
+
+    fog = f(g(x)) -> (2.g(x²))+1 -> 2x²+1
+    fog = 2x²+1
+
+    identificar uma função composta.
+    Exemplo:
+        h(x) = cos(x²) ->  f(x) = con(x)
+                                    g(x) = x²
+        h(x) = fog(cos(g(x))) => (cos(x)) -> cos(x²) //
+
+        -------------------------------------------------
+
+        h(x) = sqre(1+x2) -> f(x) = sqre(x)
+                            g(x) = 1+x²
+
+        fog = f(g(x)) -> sqre(1+x²) //
+
+        f(x) = 2x+1
+        f-¹(x) = (x-1)/2
+        f-¹of = f-¹(f(x)) -> 
+            (-1)+(2x+1) / 2 -> 
+            2x / 2 ->
+            x
+        f-¹of = x //
