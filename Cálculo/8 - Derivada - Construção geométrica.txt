@@ -1,0 +1,36 @@
+Derivada - Construção Geométrica
+    f(x) = x² U
+    Vamos focar apenas na parte x+
+    f(1) = 1² = 1 pont (x,y) = (1,1)
+    f(2) = 2² = 4 pont (x,y) = (2,4)
+    f(3) = 3² = 9 pont (x,y) = (3,9)
+
+    df/dx = limite dx -> Variaçãof / Variaçãox
+    Vx dos pontos x = 1 e x = 2
+        2 - 1 = 1; variação em x = 1 //
+    Vf dos pontos y = 1 , y = 4
+        4 - 1 = 3; variação em x = 3 //
+        
+    Vx dos pontos x = 2 e x = 3
+        3 - 2 = 1; variação em x = 1 //
+    Vf dos pontos y = 4 , y = 9
+        9 - 4 = 5; variação em x = 5 //
+
+    Percebe que a imagem representa um triângulo
+    há um ângulo de 90°, o antuto teta em relação ao cateto oposto define o crescrimento
+
+    Conforme eu for pegando variações cada vez menores no eixo x, eu encontro um triângulo com uma reta tangete
+    Essa reta tangente define a inclinação da Derivada
+    tg ângulo = cateto oposto / cateto adjacente
+    tg â = df / dx //
+
+    Por não se tratar de uma reta linear, o ângulo vai ficando maior de acordo com o eixo x,
+    maior o valor de x em que pego a variação, maior o ângulo.
+    
+    df/df = 0 -> Ponto de ótimo (mínimos ou máximos)
+
+    Derivada da Derivada
+    d²f = dx² = d/dx . (df / dx)
+
+    Caso de mínimo, função U -> d²f/dx² > 0
+    Caso de máxima, função -U (U invertido) - d²f/dx² < 0

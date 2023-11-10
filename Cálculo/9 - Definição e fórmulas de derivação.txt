@@ -1,0 +1,53 @@
+Derivada - Definição e Fórmulas de Derivação
+
+Seja f: df / dx lim vx -> 0 f(x+vx) - f(x) / vx
+
+Exemplo
+f(x) = x² -> df/dx = dx² / dx = lim vx -> 
+(x + vx)² - x² / vx
+
+(x + vx).(x + vx) - x² / vx
+
+x² + xvx + xvx + vx² - x² / vx
+
+vx² + 2xvx / vx
+
+vx em evidência
+vx (2x + vx) / vx 
+
+2x + vx //
+
+como vx -> 0
+
+dx²/dx = 2x //
+
+Assim, para x > 0 -> df/dx > 0
+Assim, para x < 0 -> df/dx < 0
+Assim, para x = 0 -> df/dx = 0
+
+Fórmulas de derivação (atalhos)
+    constantes -> dc / dx = 0 //
+
+    Funções polinômiais f(x) = x^n -> onde n é real, df/dx = n . (fx^n-1)
+    Exemplo:
+        f(x) = x² -> n = 2 ; n. x^n-1 = 2x //
+        f(x) = x^4 -> n = 4 ; n. x^n-1 = 4x^3 //
+
+    Funções exponenciais f(x) = a^x , a > 0
+        da^x / dx = ln(a) . a^x
+        obs.: ln(a) = log na base e de a
+
+        f = e^x -> de^x / dx -> e^x (não muda)
+
+    Funções log
+        f(x) = log(a) x
+            df/dx = 1 / x . ln(a) //
+
+        f(x) = ln x
+            df/dx = 1/x
+
+    Funções Trigonométricas
+        f(x)    =   df/df
+        sin(x)      con(x)
+        cos(x)      -sin(x)
+        tg(x)       sex²(x) = 1/cos²(x)

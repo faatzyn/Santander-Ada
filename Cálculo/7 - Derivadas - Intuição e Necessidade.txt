@@ -1,0 +1,18 @@
+Derivada - Intuição
+    Distância SP ---- RJ = 435 kM
+    tempo = 6h
+
+    Velocidade Média = Vm = D / t = 435 / 6 = 72,5 kM/h
+
+    Velocidade Instântanea
+    V = dx / dt -> V(t) = lim dx dt onde dt -> o
+    V(t) = dx(t) / dt
+
+    Derivada é uma forma de se medir variação.
+
+(De)Crescimento -> Derivada nos permite analisar Crescimento e Decrescimento
+
+Numa constante, a df / dx nunca muda;
+Numa Linear crescente a derivada da função df / dx será > 0
+Numa Função Quadrática U, 3 regimes, Decrescimento, constante(pico ou vale) e Crescimento
+    Para o Decrescimento, df/dx < 0, na constate df/dx = 0, no Crescimento df/dx > 0

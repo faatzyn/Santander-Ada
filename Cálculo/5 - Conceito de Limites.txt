@@ -1,0 +1,35 @@
+LIMITES
+f(x) = 1 / x
+
+Olha o lado positivo do plano cartesiano
+Para todo valor pequeno de x, o valor em y é muito algo (exemplo 1 / 0.0001) = 10000
+Para todo valor pequeno de x, o valor em y é muito algo (exemplo 1 / 0.001) = 1000
+Para todo valor pequeno de x, o valor em y é muito algo (exemplo 1 / 0.01) = 100
+Para todo valor pequeno de x, o valor em y é muito algo (exemplo 1 / 0.1) = 10
+
+Limites Laterais
+    Quando x tende a zero, pelo lado positivo -> x -> 0+
+    Quando x tende a zero, pelo lado negativo -> x -> 0-
+
+Analisando x positivo:
+    Se perceber, por mais que aumentemos o valor de x, nunca Y fica negativo, sendo assim
+    dizemos que essa função tende a 0, ou seja, quanto maior o x, y se aproxima mais de zero.
+    então, x => oo.
+
+    lim x→∞ => f(x)=0;
+
+    Agora se tendemos x -> 0 (retrocendo x), f(x), vulgo y, tenderia a infinito. para x -> 0, y = oo.
+    lim x→0+ => f(x)=+∞
+
+Analisando x negativo:
+    Para x mais próximo de zero, f(x) tende ao infinito negativo.
+    lim x→0− => f(x)=−∞
+
+    Para x tendeno ao infinito, f(x) tende a 0.
+    lim x→-∞ => f(x)=0
+
+Quando percebemos, que dependendo do limite lareral para x→0, a função apresentar -∞ ou +∞, significa que a função não tem limites.
+Em resumo, a divergência dos limites laterais para +∞ e −∞ em x=a sugere que a função não possui um limite finito em x=a.
+Sendo assim, o limite só existe se os limites laterais forem igual.
+limite x->∞ -> 1/x = 0 (tende a zero)
+limite x->-∞ -> 1/x = 0 (tende a zero)

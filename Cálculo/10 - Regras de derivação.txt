@@ -1,0 +1,75 @@
+Regras de derivação
+Somas de funções
+    f(x) = g(x) + h(x) - k(x)
+    df/dx = dg/dx + dh/dx + dh/dx
+
+    Exemplo
+        f(x) = x^2 + sin(x) - 42
+        df/dx = 2x + cos(x) - 0
+        df/dx = 2x + cos(x) //
+
+Produto de constante por funções
+    f(x) = c . g(x)
+    df/dx = c . dg/dx
+
+    Exemplo
+        f(x) = 5x^4
+        df/dx = 5 . 4x^3
+        df/dx = 20x^3 //
+
+Produto de funções
+    f(x) = g(x) . h(x)
+    df/dx = dg/dx . h + g dh/dx
+
+    Exemplo
+        f(x) = 2^x . cos(x)
+        df/dx = ln(2) . 2^x . cos(x) + 2^x . (-sin(x))
+        df/dx = 2^x (ln(2) . cos(x) - sin(x)) //
+
+Quociente de funções
+    f(x) = g(x) / h(x)
+    df/dx = (dg/dx . h - g .dh/dx) / h²
+
+    Exemplo
+        f(x) = x / e^x
+        df/dx = (dx/dx) . e^x - x . (de^x/dx) / (e^2)²
+        df/dx = 1.e^x - x.e^x / e^x . e^x (evidência e^x)
+        dx/dx = e^x . (1 - x) / e^x . e^x (corta a evidência)
+        df/dx = 1 - x / e^x //
+
+Regra da Cadeia - Funções Compostas
+    f(x) = g(h(x))
+    df/dx = dh/dx . dx/dx|h(x)  (| -> avaliada na função de dentro)
+
+    Exemplo:
+        f(x) = sin(x²) -> função de dentro -> x²
+        df/dx = dx²/df . dsin/dx|x²
+        df/dx = 2x . cos(x²)
+
+        f(x) = e^-x -> função de dentro -> -x
+        df/dx = -1 . e^x|-x
+        df/dx = -e^-x
+
+        f(x) = cos²(x) -> função de dentro cos(x) -> de fora x²
+        f(x) = 1 + cos(2x) / 2
+        df/dx = dcos(x)/dx . dx²/dx
+        df/dx = -sin(x) . 2x|cos(x)
+        df/dx = -2sin(x)cos(x) //
+
+        f(x) = e^x² -> função interna x², externa e^x²
+        df/dx = 2x . e^x² //
+
+        f(x) = (4x²+3x+42)², funçãp interna 4x²+3x+42, externa x² -> representa o quadrado de tudo
+        df/dx = (8x+3) . 2.(4x²+3x+42)
+        df/dx = (16x+6).(4x²+3x+42) //
+
+
+    Ignorando a regra do Quociente
+        f(x) = x / e^x -> x . e^-x (inverto para ignorar o Quociente)
+        f(x) = x . e^-x -> Mudei para regra do Produto
+        dx = 1 . e^-x + x . _(-1 . e^-x)_, apliquei regra da Cadeia no termo sublinhado
+            onde interna = -x, externa e^-x
+        dx = e^-x + x(-e^-x)
+        dx = e^-x - xe^-x
+        dx - e^-x . (1-x)
+        dx = 1 - x / e^x //
