@@ -1,0 +1,15 @@
+Tentar resolver o problema com a menor quantidade de operações
+
+Programar é construir coisas que funcione de forma otimizada
+
+Existe uma idéia, que primeiro vc tem que fazer uma coisa funcionar, e depois fazer
+funcionar da melhor maneira possível.
+
+Sempre começar o problema pelo pior cenário.
+
+Efetuar uma busca binária, buscando esse item numa lista menor.
+
+Preferir por acesso direto aos dados (operação de dados 1)
+
+OU -> n, onde n é o tamanho da lista, levando em conta o consumo de recursos, o tempo de operação.
+

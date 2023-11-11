@@ -1,0 +1,23 @@
+Construção de um algoritmo
+    Pseudocódigo -> Linguagem do dia a dia para resolução de um problema;
+
+    Início:
+    Entradas: Valores de entrada de um algoritmo
+    Processamento: Trata os valores de entrada
+    Saída: Valor de saída
+    Final:
+
+    Exemplo: Imprimir o nome da pessoa
+
+    Início
+        PRINCIPAL
+    Entrada de dados:
+        MOSTRAR:'Digite seu nome'
+        ESPERAR_DIGITACAO->nome
+    Processamento:
+        JUNTAR_TEXTO:'Concateno com o texto 'Bom dia {nome}'
+    Saída:
+        MOSTRAR:'Bom dia {nome}'
+    Final
+        FIM
+

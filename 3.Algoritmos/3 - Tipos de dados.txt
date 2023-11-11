@@ -1,0 +1,27 @@
+Tipos de dados
+    númericos
+        inteiros
+        ponto flutuantes
+
+    texto
+        sequencia de caracteres
+
+    boleano
+        verdadeiro ou falso
+
+Exemplo
+    INICIO principal
+    VAR n1: inteiro
+    VAR n2: inteiro
+    VAR resultado: inteiro
+    DEFINIR 0 -> n1
+    DEFINIR 0 -> n2
+
+    MOSTRAR "Digite o primeiro numero: "
+    ESPERAR_DIGITACAO -> n1
+    MOSTRAR "Digite o segundo numero: "
+    ESPERAR_DIGITACAO -> n2
+    SOMAR n1, n2 -> resultado
+    MOSTRAR resultado
+FIM
+

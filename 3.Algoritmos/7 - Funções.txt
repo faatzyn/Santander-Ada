@@ -1,0 +1,17 @@
+INICIO principal
+    VAR lista_numeros: ARRAY(INTEIROS)
+    MOSTRAR 'passo 1, obter os numero'
+    CHAMAR FUNCAO_OBTER_NUMEROS -> lista_numeros
+    MOSTRAR "Agora, mostrar os números: "
+    MOSTRAR lista_numeros
+FIM
+
+INICIO FUNCAO_OBTER_NUMEROS
+    VAR lista_numeros_func: ARRAY(INTEIROS)
+    ENQUANTO (TAMANHO(lista_numeros) MENOR_QUE 10 )
+        MOSTRAR 'Digite um numero'
+        ESPERAR_DIGITACAO -> numero
+        ADICIONAR(numero, lista_numeros_func)
+    FIM ENQUANTO
+    RETORNAR lista_numeros_func
+FIM FUNCAO_OBTER_NUMEROS

@@ -1,0 +1,9 @@
+Dicas para montar algoritmos
+    Criar estruturas com passos bem definidos
+    Tem em mente qual o problema que queremos resolver
+    Um problema bem definido, sabendo quais os parâmetros é um dos principais objetivos
+    Entender bem o problema
+    Criar, testar e ver se ele esta atendendo bem o problema, esse processo é parte do aprendizado
+    Precisamos testar o algoritmo até quando dá errado, qual o comportamento
+    escrever um algoritmo é igual escrever a receita de um bolo
+        

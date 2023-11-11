@@ -1,0 +1,19 @@
+INICIO principal
+    VAR nome: string
+    VAR hora: inteiro
+    VAR mensagem: string
+
+    MOSTRAR "Digite seu nome: "
+    ESPERAR_DIGITACAO -> nome
+    MOSTRAR "Digite a hora atual (somente hora): "
+    ESPERAR_DIGITACAO -> hora
+
+    SE (hora MAIOR_QUE 0) E (hora MENOR_QUE)
+        DEFINIR "Bom dia " -> mensagem
+    OU_SE (hora MAIOR_OU_IGUAL_A 12) E (hora MENOR_QUE 18)
+        DEFINIR "Boa tarde " -> mensagem
+    OU_SE (hora MAIOR_OU_IGUAL_A 18) E (hora MENOR_QUE 24):
+        DEFINIR "Boa noite " -> mensagem
+
+    MOSTRAR mensagem, nome
+FIM
