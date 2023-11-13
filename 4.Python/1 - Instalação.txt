@@ -1,0 +1,5 @@
+Python é muito popular
+Baixar o interpretador python para windows
+    Selecionar  Adicionar o python ao path do sistema
+Baixar uma IDE (VsCode, Sublimetext,...)
+CTRL + ',' -> Abre as configurações
