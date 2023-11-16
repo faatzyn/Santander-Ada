@@ -1,0 +1,12 @@
+Linguagem do PowerBI
+    DAX
+
+Quando no modo de exibição de tabela
+    é possível criar novas tabelas com as inforções, formulas disponiveis no PowerBI.
+
+    quando clicamos em nova coluna, colocamos o nome da coluna e formula DAX
+
+    calculamos a media de quantity presente na tabela order_details;
+    average_sales = CALCULATE(AVERAGE('public order_details'[quantity]))
+    o bom do powerbi, é que ela já identifica os relacionamentos,
+    sendo assim conseguimos puxar informações de outras tabelas.

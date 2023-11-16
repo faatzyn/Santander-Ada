@@ -1,0 +1,76 @@
+Regressão Linear Simples
+    Estuda determinada variável atráves de outra.
+    Seu objetivo é descrever atráves de um modelo matemático.
+    Regressão é determinar a equação que forma essa reta.
+
+    Exemplo
+        Y = aX + b
+        a = Coeficiente ângular da reta
+        b = Coeficiente linear
+
+            = EXY - ((EX).(EY)/n)
+        a   = --------------------
+            = EX² - ((EX)²/n)
+
+
+        b = mY - a.mX
+
+        mY = EY / n
+
+        mX = EX / n
+
+        Distância X (km)   Tempo entrega Y (dias)       X.Y             X²
+        215                           1                 215          46225           
+        480                           1                 480         230400
+        325                          1,5              487,5         105625
+        550                           2                1100         302500
+        920                           3                2760         846400
+        670                           3                2010         448900
+        825                          3,5             2887,5         680625
+        1070                          4                4280        1144900
+        1350                         4,5               6075        1822500
+        1215                          5                6075        1476225
+        ------------------------------------------------------------------
+        7620                         28,5             26370        7104300
+
+        Seu gráfico pode formar uma reta passando pelos pontos, indicando correlação.
+
+            = EXY - ((EX).(EY)/n)       = 26370 - (7620.28,5 / 10)      =    4653
+        a   = -------------------- =>   =------------------------- =>   =------------- => 0,0036 //
+            = EX² - ((EX)²/n)           = 7104300 - (7620²/10)          =   1297860
+
+        b   = mY - a.mX =>  (28,5 / 10) - (0,0036 . (7620/10))  =>    2,85 - (0,0036 . 762) => 2,85 - 2,7432 
+        b   => 0,1068 //
+
+        
+        Y   = 0,0036.X + 0,1068
+
+        Se x = 900 => Y = 0,0036.900 + 0,1068 => 3,3468
+
+        Coeficiente de correlação
+        
+            =               EXY - ((EX).(EY) / n)
+        r   = ---------------------------------------------------
+            =   sqrt( (EX² - ((EX)² / n)) . (EY² - ((EY)² / n)) )
+
+
+            =               26370 - ((7620).(28,5) / 10)
+        r   = ---------------------------------------------------------------
+            =   sqrt( (7104300 - ((7620)² / 10)) . (99,75 - ((28,5)² / 10)) )
+
+        
+            =               4653
+        r   = ---------------------------- => 0,9489 // Correlação positiva
+            =   sqrt( 1297860 . 18,525 )
+
+
+        Coeficiente de determinação
+            Proporção de variação de uma variável em relação a outra;
+            r²
+            r² = 0,9489²
+            r² = 0,9004
+            90,04% dos pontos são representados pela equação;
+
+
+
+

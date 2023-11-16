@@ -1,0 +1,41 @@
+Conteúdo
+    Introdução a estatística e amostragem
+    Tipos de dados, tabelas e distribuição de frequência
+    Visualização gráfica
+    Medidas de posição e medidas de dispersão (variabilidade)
+    Análise bidimensional
+    Regressão Linear Simples
+    Introdução a Probabilidade
+    Probabilidade
+    Análise Combinatória
+    Probabilidade total, parcial teorema de Bayes
+
+Introdução a estatística e amostragem
+    Ciência que estuda métodos de coleta, análise, 
+        organização, descrição, interpretação e apresentação de dados experimentais.
+    
+    Amostra
+        Subconjunto de unidades retiradas de uma população.
+
+        Amostra probabilística:
+            Elementos apresentam probabilidade maior que zero de serem selecionados;
+        Amostra não probabilística:
+            Quando não há probabilidade clara/conhecida de seleção dos elementos.
+
+Técnicas de Amostragem Probabilística
+    Amostra Aleatória Simples - AAS
+        Exemplo. Bingo: Posso pegar um número e não o reponho - AAS sem reposição;
+            Cada elemento sai uma única vez, todos tem a mesma probabilidade de ser sorteado;
+        Exemplo. Bingo: Posso pegar um número e voltar ele para o pacote - AAS com reposição;
+            Quantidade indeterminada de quantas vezes pode vir o valor;
+
+    Amostra Estratificada
+        Dividimos a população em grupos de características comuns, e retiramos uma amostra de cada grupo;
+
+    Amostra Sistemática
+        Elementos são selecionados seguindo uma regra pré definida;
+
+    Amostra por Conglomerados
+        A população é dividida em miniaturas (não homogêneas) e seleciona uma amostra aleatória desses conglomerados;
+
+    

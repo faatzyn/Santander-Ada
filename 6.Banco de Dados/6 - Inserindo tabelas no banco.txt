@@ -1,0 +1,13 @@
+databases -> schema -> tables -> create table
+    ambiente bem visual
+    similar ao mysql
+
+por query:
+    create table professores(
+        id_professor integer,
+        celular varchar(40),
+        nome varchar(40),
+        id_disciplina integer,
+        primary key (id_professor),
+        foreign key (id_disciplinas) references disciplinas(id_disciplina)
+    )

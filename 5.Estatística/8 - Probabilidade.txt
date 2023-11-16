@@ -1,0 +1,100 @@
+Probabilidade
+    Chance de algo acontecer (um certo número de um dado sair);
+    Exemplo.: Dado de 6 lados, cada lado de chance de 1/6 de sair;
+
+P(A) = nº de resultados do evento A / nº total de resultados no espaço amostra
+
+P(A) = n(A) / n(S)
+
+F(A) = frequência do evento A / total de realizações = n(A) / n
+
+Quando n -> oo, F(A) tende a P(A);
+
+Exemplo
+    Ao lançar uma moeda
+    Espaço Amostral S = {cara, coroa}
+    Evento face cara A = {cara}
+
+    P(A) = n(A) / S(A) -> 1/2 -> 0,5 //
+        Chance de 50% de se obter a face cara;
+
+    Simulando jogadas
+    n = número de jogadas
+    fn1 Em 5 jogadas:
+        n1 = cara
+        n2 = coroa
+        n3 = cara
+        n4 = coroa
+        n5 = coroa
+    
+    fn2 Em 10 jogadas: 6 cara
+    fn3 Em 50 jogadas: 22 cara
+    fn4 Em 100 jogadas: 47 cara
+
+            fn1         fn2         fn3         fn4         ...   P(A)     
+    cara    2/5         6/10        22/50       47/100      ...   0,5
+    n       5           10          50          100         ...   infinito  
+
+---------------------------------------------------------------------------------------------
+
+(i) <= P(A) <= 1 -> Probabilidade entre 0 e 1;
+
+(ii) P(S) = 1;
+
+(iii) P(oo U i=1) => ooEP(Ai) para i=1 => são eventos mutuamente exclusivos;
+
+Decorrem da definição, as sequintes propriedades:
+    P(0) = 0
+    para todo evento A de S, P(A) = 1 - P(A_)
+    se A e B são dois eventos quaisquer de S, então:
+        P(AuB) = P(A) + P(B) - P(A^B)
+
+    Exemplo
+        S = {1 2 3 4 5 6}
+        A = {2 4 6}
+        B = {1 2 3 4 5 6}
+
+        P(A) = 3/6 = 1/2 = 0,5
+        A^B = {2 4 6}^{1 2 3 4 5 6}
+        A^B = {2 4 6}
+
+        P(A^B) = {2 4 6} / {1 2 3 4 5 6} = 3/6 = 0,5
+
+        
+        P(AuB) = 1/2 + 1 - 0,5 = 1 //
+
+Eventos Independentes
+    São independentes quando a realização ou não de um não afeta o outro;
+
+Eventos mutuamente exclusivos ou eventos disjuntos
+    Quando a realização de 1 exclui a realização do outro
+    Exemplo, numa moeda, onde o evento A é cara e o B é coroa, um exclui o outro, 
+        pois, não há como obter as duas possibilidades no mesmo lançamento;
+        Sendo assim:
+            A^B=0 e portanto P(A^B)=0
+
+    Exemplo lançar um dado
+        S = {1 2 3 4 5 6}
+        A = {2 4 6}
+        B = {4 5 6}
+
+        P(A) = 3/6 = 0,5
+        P(B) = 3/6 = 0,5
+        A^B = {2 4 6}^{4 5 6} = {4 6}
+        P(AuB)  = 0,5 + 0,5 - 2/6 = 1/2 + 1/2 - 1/3
+                = 2/3 //
+
+
+Probabilidade Condicional
+    P(B|A) = P(A^B) / P(A)
+
+    Exemplo
+        S(6*6) = 36 possibilidades
+        S(A+B=5) {(1,4),(2,3),(3,2),(4,1)}
+        n(A+B=5) = 4
+
+        P(A+B=5) 4 / 36 -> 1/9;
+
+        S(A+B=5|A=2) = {(2,3)}; n = 1 possibilidade
+        P(A+B=5|A=2) = 1 / 6;
+

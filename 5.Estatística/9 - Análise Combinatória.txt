@@ -1,0 +1,74 @@
+Análise Combinatório
+    Surgiu para fazer a contagem de possibilidades
+
+    Exemplo 1
+        1-9 -> 9 possibilidades
+        A-Z -> 26 possibilidades
+        Total de possibilidades = 9 * 26 -> 234 possibilidades //
+
+    Exemplo 2
+        3 opções de carne 
+        3 opções de queijo
+        2 opções de bebidas
+        Total de 3 * 3 * 2 = 18 opções //
+
+Tipos de Agrupamento
+    Arranjo - Usamos Arranjo para calcular um número de possibilidades para formar um grupo ordenado de p elementos,
+        dentro n elementos disponíveis. O número de possibilidades para um arranjo é:
+
+        A(n,p) = n! / (n-p)!
+
+        5! = 5.4.3.2.1 = 120 //
+        10! = 10.9.8.7.6.5.4.3.2.1 = 3628800 //
+        0! = 1 //
+        1! = 1 //
+
+        Exemplo
+            20 Alunos - Determinar 1 representante e 1 Vice-representante
+            Quantos arranjos consigo fazer?
+
+            A(n-p) = n! / (n-p)! -> n = 20; p = 2 (representante e vice)
+
+            A(20,2) = 20! / (20-2)! -> 20! / 18! -> 20 . 19 . 18! / 18! -> corto o 18!
+            A(20,2) = 20 . 19 = 380 //
+
+    Permutação
+        Agrupamentos ordenados, onde n elementos do agrupamento é igual ao n de elementos disponíveis.
+        
+        P(n) = n!
+
+        Exemplo
+            De quantas maneiras diferentes 6 pessoas conseguem se sentar num banco?
+
+            P(6) = 6! = 6.5.4.3.2.1 = 720 //
+
+    Permutação com repetição
+        Permutação em que alguns elementos são iguais, ou se repetem.
+        Dividimos o número de elementos pelo produto dos fatoriais dos números de repetições.
+
+        P(n)(a,b,c) = n! / a! . b! . c!, onde a,b,c são a quantidade de elementos que se repetem
+
+        Exemplo
+            OVO -> quantas permutações existem?
+            P(OVO) -> 3! / 2! -> 3.2! / 2! = 3 //
+
+    Combinação
+        Usamos para formar grupos não-ordenados de p elementos, dentre os n disponíveis.
+        A principal diferença para o arranjo é que a ordem não importa.
+        C(n,p) = n! / p!(n-p)!
+
+        Exemplo
+            Escolher 3 membros para formar uma comição entre 10 candidatos;
+            A ordem é irrelevante.
+            C(10,3) = 10! / 3! . (10-3)! => 10! / 3! . 7! => 10.9.8.7! / 3! . 7! => 10.9.8 / 3.2.1
+                    = 720 / 6 = 120 //
+
+Exemplo
+    Qual a Probabilidade de um apostador ganhar o prémio maximo da MegaSena com uma aposta simples?
+    S = {1, ...60} (sem repetição)
+    6 n aleatórios, não importa a ordem
+
+    C(60,6) = 60! /  6!.(60-6)! => 60! / 6! . 54! => 60.59.58.57.56.55.54! / 6! . 54!
+            => 60.59.58.57.56.55 / 6.5.4.3.2.1 => 36045979200 / 720 => 50063860 //
+
+            P(60,6) = 1 / 50063860 => 0,00000002 x 100% = 0.000002% de ganhar //

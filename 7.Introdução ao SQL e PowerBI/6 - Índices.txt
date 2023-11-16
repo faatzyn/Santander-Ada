@@ -1,0 +1,14 @@
+Indices
+    Otimizam nossa busca
+
+    Ela trabalho num esquema de arvore binária;
+    dividindo o total pela metade.
+    Exemplo
+        temos os indices 1 2 3 4 5 6 7 8
+        ao executar um select procurando pelo id 7, o banco passa por todos os valores até chegar na 7
+        mas ao indexar, ele divida o total em duas partes
+        uma de 1-4 e outra de 5-8, ai quando usamos um select no id 7, ele verifica, o em qual partes deve estar
+        nisso reduz o número de comparações até chegar no 7
+        quando maior a tabela, mais subdivisões são criadas, e melhor a performance.
+
+    

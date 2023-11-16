@@ -1,0 +1,73 @@
+Análise Bidimensional
+    Principal objetivo, explorar relações, as duas podem ser Qualitativas, ou Quantitativas, ou 1 de cada
+
+    AGENTE      Anos de Serviço (X)      Número de Clientes (Y)
+       A                2                       48
+       B                3                       50
+       C                4                       56
+       D                5                       52
+       E                4                       43
+       F                6                       60
+       G                7                       62
+       H                8                       58
+       I                8                       64
+       J                10                      72
+
+    De forma gráfica (gráfico de dispersão) é possível medir essa relação e quais os pontos fora da curva.
+
+    Correlação linear positiva
+        Quanto maior x maior y;
+
+    Correlação linear negativa
+        Quanto maior x menor y;
+
+    Correlação não Linear
+        Quando o gráfica apresenta uma curva;
+
+    Sem Correlação
+        Não é possível fazer uma linha, curva, com os valores;
+
+    Coeficiente de Correlação (r)
+        Identifica o grau de relação entre duas variáveis Quantitativas e indica o grau da intensidade da correlação;
+
+        Cálculo
+                =               EXY - ((EX).(EY) / n)
+            r   = ---------------------------------------------------
+                =   sqrt( (EX² - ((EX)² / n)) . (EY² - ((EY)² / n)) )
+
+        se r = +1
+            relação perfeita e positiva entre as variáveis;
+
+        se r = -1
+            relação perfeita e negativa entre as variáveis;
+
+        se r = 0
+            não há relação, ou se houver, não é linear;
+
+
+    Exemplo.: 
+    AGENTE      Anos de Serviço (X)      Número de Clientes (Y)     X.Y         X²          Y²
+       A                2                       48                  96          4           2304
+       B                3                       50                  150         9           2500
+       C                4                       56                  224         16          3136
+       D                5                       52                  260         25          2704
+       E                4                       43                  172         16          1849
+       F                6                       60                  360         36          3600
+       G                7                       62                  434         49          3844
+       H                8                       58                  464         64          3364
+       I                8                       64                  512         64          4096
+       J                10                      72                  720         100         5184
+    ---------------------------------------------------------------------------------------------
+    n = 10       EX = 57                    EY = 565            EXY = 3392    EX² = 383    EY² = 32581
+
+        =               EXY - ((EX).(EY) / n)                               3392 - (57 . 565 / 10)
+    r   = --------------------------------------------------- => --------------------------------------------
+        =   sqrt( (EX² - ((EX)² / n)) . (EY² - ((EY)² / n)) )   sqrt((383 - (57² / 10)) . ( 32581 - (565² / 10)))
+
+        = 171,5                                             =   171,5                       = 171,5
+    r   = --------------------------------------------  =>  = ---------------------     =>  = -----------------
+        = sqrt((383 - 324,9) . (32581 - 31922,5))           =   sqrt(58,1 . 658,5)          = 195,6
+
+    r = 0,877 // Linear positiva de 87%
+
+    

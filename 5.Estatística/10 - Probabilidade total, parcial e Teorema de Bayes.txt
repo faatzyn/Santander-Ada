@@ -1,0 +1,94 @@
+Exemplo Probabilidade Condicional
+    rj = 450
+    sim^rj = 130
+    nao^rj = 130
+    naosabe^rj = 170
+
+    sp = 300
+    sim^sp = 100
+    nao^sp = 125
+    naosabe^sp = 75
+
+    bh = 250
+    sim^bh = 150
+    nao^bh = 95
+    naosabe^bh = 5
+
+    sim = 400 pessoas
+    total = 1000 pessoas
+
+    P(sim) = 400 / 1000 => 0,4 => 40%
+
+    P(rj) = 450 / 100 => 0,45 => 45%,
+
+    P(bh) = 250 / 100 => 0,25 => 25%
+
+    P(nao|bh) = 95 / 250 => 0,38 => 38% das pessoas de BH falaram que não
+
+
+
+Probabilidade total
+    A Probabilidade de um Evento B ocorrer é a soma das probabilidades das intersecções do 
+        evento B com as partições A(i) de outro evento A;
+
+    P(B) = EP(n;i=1)(A^B) = E(n;i=1)P(B|A(i)) . P(A(i))
+
+    P(B) igual a soma de todas as intersecções com A (A(1), A(2), A(3)......, A(n))
+
+    Exemplo
+        João tem duas caixas de e-mail.
+        Na primeira, 5% dos email são spam.
+        Na segunda, 10% são spam.
+        Do total de e-mails, 80% está na primeira caixa e 20% na segunda.
+        Escolhendo um email aleatório, qual a possibilidade de ser spam?
+
+        P(spam|caixa1) = 0,05 //
+        P(spam|caixa2) = 0,10 //
+        P(caixa1) = 0,8 //
+        P(caixa2) = 0,2 //
+        
+        P(B) = EP(n;i=1)(B|A(i)) . P(A(i))
+
+        P(spam) = EP(n;i=1)(Spam|caixa(i)) . P(caixa(i))
+
+        P(spam) = [ P(spam|caixa(1)) . P(caixa(1)) ] + [ P(spam|caixa(2)) . P(caixa(2)) ]
+
+        P(spam) = [ 0,05 . 0,08] + [ 0,10 . 0,2 ] = 0,06 -> 6% de ser spam //
+
+
+Teorema de Bayes
+    Deriva da probabilidade Condicional.
+    Ele relaciona as probabilidades Condicionais entre dois eventos da seguinte forma.
+
+    P(A|B) = P(B|A) . P(A) / P(B)
+
+    Exemplo
+        Um teste diagnóstico para determinada doença D só pode resultar em positivo ou negativo.
+        Probabilidade de um falso negativo é de 1%.
+        Probabilidade de um falso positivo é de 5%.
+        A taxa de incidência da doença é baixa, ocorrendo um caso por mil habitantes.
+
+        Se uma pessoa ao acaso for submetida ao teste, e o resultado der positivo, qual a probabilidade
+        dessa pessoa ter a doença D?
+
+        P(não_doença|fpositivo) = 0,05
+        P(doença|fnegativo) = 0,01
+        P(doença) = 0,001
+
+        P(não_doença) = 1 - P(doença) = 1 - 0,001 = 0,999 //
+
+        P(doença|fnegativo) = 0,01 
+        P(doença|positivo) = 1 - P(doença|fnegativo) = 1 - 0,01 = 0,99 //
+
+        P(não_doença|fpositivo) = 0,05
+        P(não_doença|negativo) = 1 - P(não_doença|fpositivo) = 1 - 0,05 = 0,95 //
+
+        P(doença) x P(positivo|doença) = 0,001 . 0,99 = 0,00099 -> 0,099%
+        P(doença) x P(negativo|doença) = 0,001 . 0,01 = 0,00001 -> 0,001%
+        P(doença_) x P(positivo|doença_) = 0,999 . 0,05 = 0,04995 -> 4,995%
+        P(doença_) x P(negativo|doença_) = 0,999 . 0,95 = 0,94905 -> 94,905%
+
+        P(D|positivo) = P(positivo|D) . P(D) / P(D) . P(positivo|D) + P(doença_) . P(positivo|doença_)
+
+        P(D|positivo) = 0,99 . 0,001 / 0,001 . 0,99 + 0,999 . 0,05
+        P(D|positivo) = 0,0194 -> 1,94% ter doença se positivo //

@@ -1,0 +1,14 @@
+Permissão e Segurança
+    Criar usuários que fara os logins no banco com permissões controladas;
+    Controlar update, deletes, inserts e select a tabelas sensiveis;
+
+Views
+    Criar uma visualização
+    Create view 'nome_view' as (
+        select 'campo1', 'campo2' from tabela 
+    );
+
+    Apos criar, apenas rodar um select na view
+    select * from 'nome_view';
+
+    uma view nada mais é que uma mascara para os dados;

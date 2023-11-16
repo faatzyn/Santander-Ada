@@ -1,0 +1,18 @@
+Tipos de Dados e Armazenamento
+    Númericos
+        Inteiros
+            smallint 2 bytes
+            integer 4 bytes
+            bigint 8 bytes
+        Decimais
+    String
+        varchar -> 1 bit por caracter
+        char -> tamanho fixo (2 digitos, ou 3 digitos)
+        text -> tamanho indeterminado
+    Data
+        date (sem horas)
+        timestamp (intervalo de tempo)
+    Bool
+        1 unico byte
+
+

@@ -1,0 +1,105 @@
+Normalização - FN
+    Busca garantir qualidade dos dados
+
+    1FN ->
+        Cada célula da tabela deve conter um único valor e não deve ser multivalorada.
+        Isso significa que não deve haver listas, conjuntos ou arrays como valores em uma única célula.
+        Por exemplo, considere uma tabela de estudantes:
+
+        ID Estudante	Nome	Disciplinas
+        1	            João	Matemática, Física
+        2	            Maria	Química, Biologia, Art
+
+        A tabela acima não está na 1NF devido à coluna 'Disciplinas', 
+        onde há múltiplos valores separados por vírgula. Para atender à 1NF, 
+        você precisaria normalizar os dados, criando outra tabela para 
+        relacionar múltiplas disciplinas a um único estudante.
+
+        Para colocar a tabela em 1NF, você poderia dividi-la em duas:
+
+        Tabela Estudantes:
+        ID Estudante	Nome
+        1	            João
+        2	            Maria
+
+        Tabela Disciplinas dos Estudantes:
+        ID Estudante	Disciplina
+        1	            Matemática
+        1	            Física
+        2	            Química
+        2	            Biologia
+        2	            Arte
+
+    2FN
+        Para um conjunto de dados estar na 2FN, ele deve satisfazer os critérios da 1NF e, 
+        além disso, cada coluna não chave (ou seja, que não faz parte da chave primária) deve 
+        depender totalmente da chave primária.
+
+        Em termos mais simples, a 2FN diz respeito à eliminação de dependências parciais. 
+        Isso significa que em uma tabela com uma chave primária composta por mais de uma coluna, 
+        cada outra coluna na tabela deve depender completamente de TODAS as colunas da chave primária, 
+        não apenas de uma parte dela.
+
+        Exemplo, uma tabela de pedidos:
+        ID Pedido	ID Produto	Nome Produto	Preço Unitário	Quantidade
+        1	            101	    Camiseta	        20.00	        2
+        1	            102	    Calça	            30.00	        1
+        2	            101	    Camiseta	        20.00	        3
+        
+        Neste caso, temos uma chave primária composta por ID Pedido e ID Produto.
+        A coluna Nome Produto e Preço Unitário não dependem apenas do ID Produto,
+        mas sim da combinação de ID Pedido e ID Produto.
+
+        Para colocar esta tabela na 2FN, podemos dividi-la em duas:
+
+        Tabela Pedidos:
+        ID Pedido	ID Produto	Quantidade
+        1	            101	        2
+        1	            102	        1
+        2	            101	        3
+        
+        Tabela Produtos:
+        ID Produto	Nome Produto	Preço Unitário
+        101	        Camiseta	        20.00
+        102	        Calça	            30.00
+        
+        Agora, cada tabela tem uma chave primária simples e as outras colunas dependem completamente 
+        dessa chave primária, atendendo aos critérios da 2FN.
+
+    3FN
+        Para um conjunto de dados estar na 3FN, ele precisa estar na 2FN e, além disso,
+        não pode ter dependências transitivas: cada coluna que não seja chave primária 
+        deve depender exclusivamente da chave primária, e não de outras colunas não chave.
+
+        Em termos mais simples, na 3FN, eliminamos as dependências transitivas. 
+        Isso significa que se um atributo depende de outro que não é chave primária, 
+        ele deve ser movido para uma tabela separada.
+
+        Vamos expandir o exemplo anterior para ilustrar a 3FN:
+        Considere a seguinte tabela de funcionários:
+
+        ID Funcionário	Nome Funcionário	Departamento	Código do Departamento	Salário
+        1	                João	            Vendas      	VD	                3000
+        2	                Maria	            Marketing       MK  	            3500
+        3	                Pedro	            Vendas      	VD	                3200
+        
+        Neste caso, Departamento e Salário são atributos dependentes de Código do Departamento. 
+        Aqui, Departamento e Salário são transitivamente dependentes do Código do Departamento, 
+        que não é uma chave primária.
+
+        Para colocar essa tabela na 3FN, podemos dividir em duas tabelas:
+
+        Tabela Funcionários:
+        ID Funcionário	Nome Funcionário	Código do Departamento
+        1	                    João	        VD
+        2	                    Maria	        MK
+        3	                    Pedro	        VD
+
+        Tabela Departamentos:
+        Código do Departamento	Departamento	Salário
+        VD	                    Vendas	        3000
+        MK	                    Marketing	    3500
+        
+        Agora, Departamento e Salário estão numa tabela separada, 
+        onde Salário depende apenas do Código do Departamento, 
+        que é a chave primária desta nova tabela, atendendo aos critérios da 3FN.

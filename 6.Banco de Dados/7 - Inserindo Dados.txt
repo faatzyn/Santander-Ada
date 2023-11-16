@@ -1,0 +1,5 @@
+INSERT
+    insert into 'tabela' (campos(n))values (valor_campos(n)),(outra linha),(outra linha).....;
+    importantec seguindo a ordem;
+
+    select * from 'tabela';

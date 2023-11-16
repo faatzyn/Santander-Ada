@@ -1,0 +1,23 @@
+Queries simples
+    select * from 'tabela'; 
+        -> seleciona tudo da tabela
+
+    select * from 'tabela' limit 10;
+        -> para uma tabela maior, é bom limitar para evitar o gasto de recursos escessivos;
+
+    select 'campo1', 'campo2' from 'tabela;
+        -> limito a busca para apenas esses campos aparecerem
+
+    select 'campo1' * 'campo_valor' as preco from 'tabela'
+        -> 'as' dou um nome para o campo exibido
+        -> é possível fazer operações entre colulas
+
+    select * from 'tabela' where ..... ;
+        -> é possível fazer filtros para a busca ficar mais preciso de acordo com os seus critérios;
+
+    select * from 'tabela' where 'campo_nome' like 'luiz' ;
+        -> a busca é efetuado em algo parecido, exemplo: Eluiza, Eluiziano, pois o trecho do pesquisa faz parte
+
+    
+    
+

@@ -1,0 +1,11 @@
+Funções Janela
+    Ranqueamento, Agregação, Posição
+
+    select distinct
+        employee_id,
+        first_value(order_date) over (partition by employee_id order by order_date) as first_date,
+        first_value(o.ship_name) over (partition by employee_id order by order_date) as first_product
+    from orders o
+    order by employee_id
+
+    essa query, as funções janela são o over, dessa maneira eu fixei um valor epscifico para cada funcionario.

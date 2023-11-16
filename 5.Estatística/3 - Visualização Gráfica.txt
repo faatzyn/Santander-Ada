@@ -1,0 +1,40 @@
+Visualização Gráfica
+    Maneira de exibir uma tabela graficamente (colunas), não há perda de informações;
+
+    Gráfico de Linhas
+        Utilizado para demonstrar uma sequência numérica de um certo dado ao longo do tempo;
+        Demonstra evoluções ou regressões;
+        Rótulos -> Eixo X, as datas;
+        Valores -> Eixo y, númerico;
+
+    Gráfico de Colunas
+        Indica quantidade de acumulo de uma informação, só há colunas;
+        Rótulos -> Eixo x -> Identificador de cada coluna;
+        Eixo y -> valores (não obrigatório);
+
+    Gráfico de Barras
+        Existe o vertical (semelhante ao de coluna);
+        E o horizontal;
+        Rótulos -> Eixo y -> Identificador de cada barra;
+        Eixo x -> Valores;
+
+    Gráfico de Setores (Pizza)
+        Construído com base em um círculo;
+        Utilizado para representar a participação num total;
+        Mais utilizado quando há uma quantidade menor de categorias;
+
+    Histograma
+        Conjunto de retângulos justapostos sobre o eixo x;
+        Seus pontos médios coincidem com os pontos médios dos intervalos da classe;
+        A Area do Histograma é proporcional à soma das frequências simples ou absolutas;
+        Serve para ver a distribuição de sequência do dado;
+
+    Diagrama de caixas (boxplot)
+        Maneira gráfica de representar a alteração dos dados de uma variável por meio de quartis;
+        Vantagem: Conseguir ver de forma fácil, rápida, os limites 
+            (superior, inferior, q1, q3, q2 = Mediana dos dados, valor interno: média dos dados);
+
+
+    Gráfico de Dispersão
+        Visualiza a relação entre duas variáveis (ponto);
+        Possibilita enxergar os pontos fora da curva (que não fazer sentido);

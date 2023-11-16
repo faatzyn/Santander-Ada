@@ -1,0 +1,13 @@
+Queries complexas
+    -- select * from order_details od
+    -- where od.quantity > (
+    -- 	select avg(quantity) from order_details
+    -- )
+
+    -- commando with
+    -- Common table Expression
+    with average as (
+        select avg(quantity) as average_quantity from order_details
+    )
+    select * from order_details, average
+    where quantity > average.average_quantity

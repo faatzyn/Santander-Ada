@@ -1,0 +1,35 @@
+Entidade -> Tabelas
+    Representação de qualquer elemento
+    Exemplo -> Camisetas, onde cada atributo é um campo
+
+Modelagem de entidades
+    Matricula {
+        id_matricula integer FK
+        validade date
+        preco_da_mensalidade real
+    }
+
+    Professor {
+        id_professor integer FK
+        nome varchar(40)
+        celular varchar(14)
+    }
+
+    Aluno {
+        id_aluno integer FK
+        celular varchar(14)
+        idade smallint
+        nome varchar(40)
+    }
+
+    Turma {
+        id_turma integer FK
+        num_alunos smallint
+        tipo_de_curso varchar(20)
+    }
+
+    Disciplina {
+        id_disciplina integer FK
+        nome varchar(40)
+        ementa text
+    }

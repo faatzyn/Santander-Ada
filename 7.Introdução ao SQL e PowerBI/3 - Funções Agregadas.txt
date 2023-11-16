@@ -1,0 +1,32 @@
+Funções agregadas
+    Contagem
+        count()
+        select count(linhas) as total from 'tabela';
+            agrupa numa linha apenas, mostrando o total de linhas;
+
+
+    Soma
+        sum()
+        select sum(campo) from 'tabela';
+            agrupa tudo numa linha, e soma a quantidade do campo
+
+    
+    Agrupar
+        group by
+        select * from 'tabela' group by 'campo que deseja agrupar'
+            retorna uma lista sem repetir o campo que vc agrupou
+            Exemplo
+                tipo 1, 2 e 3 agrupa todos as linhas que tem tipo 1 em apenas uma linha e assim por diante
+
+
+    select date_trunc('month', order_date) as order_month, count(order_id) ids 
+    from tabela group by 'order_month' order by 'order_month'
+        Agrupo por mes com o date_trunc, vejo a quantidade de pedidos (order_id) de cada mes
+        agrupo por order_month (cada mes) e ordeno pelo order_month
+
+
+    having
+        permite criar um filtro depois de agrupar
+
+    
+

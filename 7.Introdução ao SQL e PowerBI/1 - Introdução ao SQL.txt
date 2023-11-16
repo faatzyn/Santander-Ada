@@ -1,0 +1,16 @@
+Introdução ao SQL e PowerBI
+    Instalar postgre
+
+    Query para listar as tabelas
+        SELECT table_name FROM information_schema.tables
+        WHERE table_schema = 'public' AND table_type = 'BASE TABLE';
+
+    SELECT
+        select * from categories;
+
+    Ver os schema de todas as entidades
+        selecionar:
+        generate erd ou erd for databases no postgre
+
+    
+        

@@ -1,0 +1,7 @@
+Banco de dados local
+localhost
+postgres
+123qwe.
+
+importar todas as tabelas
+selecionado um cartão com toda a quantidade de itens vendidos

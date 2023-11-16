@@ -1,0 +1,177 @@
+Derivadas - Introdução à Probabilidade
+    Probabilidade Conceitos
+        Encontramos na natureza dois tipos de fenômenos:
+
+        Determinísticos
+            Resultados sempre os mesmos e determinados pelas condições sob as quais o procedimento seja executado;
+
+
+        Não-Determinísticos (Probabilístico ou Aleatório)
+            Aplicadas em situações que envonve incerteazas;
+            Resultados variam de uma observação para outra;
+            As condições do experimento determinam apenas o comportamento probabilístico do resultado observável;
+
+        Fenômenos Aleatórios - Dependem do acaso, contudo, com mais dados é prossível encontrar um padrão;
+
+        
+    Espaço amostral
+        Lista com todos os resultados possíveis de um experimento;
+
+    Evento
+        Qualquer subconjunto do espaço amostral;
+        Cada evento tem determinada característica, que o distingue dos outros;
+
+    Exemplo.: Dados de 6 lado
+        Espaço amostral
+        {1 2 3 4 5 6} -> Conjunto com todas as possibilidades
+
+        Evento
+            A => Resultados se par {2 4 6} -> Evento composto (Mais de 1 possibilidade)
+            B => Resultados > 3 {4 5 6} -> Evento composto (Mais de 1 possibilidade)
+            C => Resultados > 5 {6} -> Evento elementar (1 possibilidade)
+            D => Resultados = 7 {} -> Não existe a possibilidade -> Evento impossível
+            E => Resultados > 0 {1 2 3 4 5 6} -> Evento certo (Todas as possibilidade)
+
+    Combinação de Eventos
+        Diagrama de Venn
+        |--------------------------|
+        |       .***.  .***.       |
+        |      |  A  ||  B  |      |
+        |      |     ||     |      |
+        |       `***´  `***´     s |
+        |--------------------------|
+
+        A união B -> AUB é representada pela soma dos conjuntos A e B;
+
+        A produto (vezes ou interseção) B -> A^B é representado pela parte onde um conjunto sobrepõe o outro (interseção);
+            Quando ocorre em um conjunto e no outro também;
+
+        Complementar de A -> A-, onde A não ocorre
+            No caso de um Diagrama de Venn onde temos apenas o conjunto A, seria todo o Diagrama -A;
+            |--------------------------|
+            |       .***.              |
+            |      |  A  |             |
+            |      |     |             |
+            |       `***´            s |
+            |--------------------------|
+
+        A menos B -> A - B, diferença entre A ocorre e B não ocorre;
+            Quando há interseção, remove a parte que houve interseção pelo conjunto B, tendo assim, A-B;
+
+        
+        Eventos mutuamente excludentes (Exclusivos)
+            Dois evento A e B são mutuamente excludentes nos casos em que não há interseção entre eles;
+            |--------------------------|
+            |     .***.      .***.     |
+            |    |  A  |    |  B  |    |
+            |    |     |    |     |    |
+            |     `***´      `***´   s |
+            |--------------------------|
+
+    Operações entre Eventos
+        Idempotentes
+            A^A = A
+            AuA = A
+
+        Comutativas
+            AuB = BuA
+            A^B = B^A
+
+        Associativas
+            (AuB)uC = Au(BuC)
+            (A^B)^C = A^(B^C)
+
+        Distributivas
+            A^(BuC) = (A^B)u(A^C)
+            Au(B^C) = (AuB)^(AuC)
+
+        Absorções
+            Au(A^B) = A
+            A^(AuB) = A
+
+        Identidades
+            A^S = A
+            AuS = A
+            A^o = o
+            Auo = A
+
+        Complementares
+            S- = o
+            o- = S
+            A^A- = o
+            AuA- = S
+            (A-)- = A
+
+        Leis de Morgan
+            (AuB)- = A-^B-
+            (A^B)- = A-uB-
+        
+        Outras Propriedades
+            A^B- = A - B
+            A-^B = B - A
+
+    Exercício
+        Lançam-se 2 moedas.
+        Espaço amostrar S de 2 moedas: {cara_cara, cara_coroa, coroa_cara, coroa_coroa};
+        Seja A: Saída de faces iguais: {cara_cara, coroa_coroa} -> Evento de A;
+        B: saída de cara na primeira : {cara_cara, cara_coroa} -> Evento de B;
+
+        Determine:
+            AuB:    {cara_cara, coroa_coroa}u{cara_cara, cara_coroa}
+                    {cara,cara, cara_coroa, coroa_coroa} //
+
+
+            A^B:    {cara_cara, coroa_coroa}u{cara_cara, cara_coroa}
+                    {cara_cara} //
+
+            A_:     O que não faz parte de A
+                    {cara_coroa, coroa_cara} //
+
+
+            B_:     O que não faz parte de B
+                    {coroa_cara, coroa_coroa} //
+
+                    
+            A_^B_:  Interção entre não A e não B
+                    {cara_coroa, coroa_cara}^{coroa_cara, coroa_coroa}
+                    {coroa_cara} //
+
+
+            A_uB_:  União entre não A e não B
+                    {cara_coroa, coroa_cara}^{coroa_cara, coroa_coroa}
+                    {cara_coroa, coroa_cara, coroa_coroa} //
+
+
+            (AuB)_:  O que não está na união de AuB
+                    ({cara_cara, coroa_coroa}u{cara_cara, cara_coroa})_
+                    {coroa_cara} //
+
+                    se eu fosse usar a formula: (AuB)_ -> A_^B_
+                    Interção entre não A e não B
+                    {cara_coroa, coroa_cara}^{coroa_cara, coroa_coroa}
+                    {coroa_cara} //
+
+
+            (A^B)_: =>  A_uB_
+                    {cara_coroa, coroa_cara}^{coroa_cara, coroa_coroa}
+                    {cara_coroa, coroa_cara, coroa_coroa} //
+
+
+            B - A:  {cara_cara, cara_coroa} - {cara_cara, coroa_coroa}
+                    {cara_coroa} //
+
+
+            A - B:  {cara_cara, coroa_coroa} - {cara_cara, cara_coroa}
+                    {coroa_coroa} //
+
+
+            A_^B:   {cara_coroa, coroa_cara}^{cara_cara, cara_coroa}
+                    {cara_coroa} //
+
+
+            B_^A:   {coroa_cara, coroa_coroa}^{cara_cara, coroa_coroa}
+                    {coroa_coroa} //
+
+
+
+

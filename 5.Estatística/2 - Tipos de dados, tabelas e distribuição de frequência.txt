@@ -1,0 +1,95 @@
+Estatística
+    Parte da matemática aplicada que fornece métodos para coleta, organização, descrição, análise e interpretação
+    de dados e para a utilização na tomada de decisões.
+
+    Tipos de dados
+    Categorizados (Qualitativos) (Não são apresetados de forma numérica, Ex.: Cor dos olhos (azul, verde....))
+        Nominais
+            Não seguem uma ordem
+            Exemplo.: Gênero Masculino, Feminino
+
+        Ordinais
+            São ordenados, dados que possam ser graduados.
+            Exemplo.: Escolaridade, básico, fundamental, médio, graduação....
+            
+
+    Numéricos (Quantitativos) (pode ser contado, Ex.: idade, altura, peso)
+        Discretos
+            Assumi apenas um valor dentro de um intervalo
+            Exemplo.: 1 filho, 2 filhos (não tem como ter 1,5 filho)
+
+        Continúos
+            Pode atingir qualquer valor dentro de um intervalo
+            Exemplo.: Altura 1,7-1,8
+
+--------------------------------------------------------------------------------------------------------------------------------------
+    Tabelas - Contrução de tabelas
+        Título:             Explica o conteúdo da tabela
+        Corpo:              Conjunto de linhas e colunas que contém as informações sobre a variável
+        Cabeçalho:          Parte superior da tabela que especifica o conteúdo das colunas
+        Coluna indicadora:  Parte da tabela que especifica o conteúdo das linhas
+        Casa ou células:    Espaço destinado a um só número, interseção de uma linha e uma coluna
+        Linha:              Série de células orgazinadas horizontalmente
+        Coluna:             Série de células orgazinadas verticalmente
+        Rodapé:             É um elemento complementar que pode conter fonte, notas ou chamadas
+
+
+    
+    Exemplo.:                Notas dos alunos da escola X
+     -------------------------------------------------------------------------------
+    | Notas     Frequência          Frequência relativa     Frequência relativa(%)  |
+    |   A           18 ->total/frequência-> 0,5000                     50           |
+    |   B           12                      0,3333                     33,33        |
+    |   C           6                       0,1667                     16,67        |
+    | Total         36                      1,0000                     100          |
+    |-------------------------------------------------------------------------------|
+     Fonte: Dados Fictícios
+
+
+    Exemplo
+    Alunos-Pesos
+    45|41|42|41|42|43|44|41|50|46|50|46|60|54|52|58|57|58|60|51
+
+    Ordenando
+    41|41|41|42|42|43|44|45|46|46|50|50|51|52|54|57|58|58|60|60
+
+    Agrupando
+    41x3|42x2|43x1|44x1|45x1|46x2|50x2|51x1|52x1|54x1|57x1|58x2|60x2
+
+    Pesos do alunos
+    --------------------------
+    |  Dados        Frequência
+    |   41              3
+    |   42              2
+    |   43              1
+    |   44              1 
+    |   45              1
+    |   46              2
+    |   50              2
+    |   51              1
+    |   52              1
+    |   54              1
+    |   57              1
+    |   58              2
+    |   60              2
+    |  Total           20
+    --------------------------
+
+    Criando intervalos
+
+        Pesos do alunos
+    |-----------------------------------------------------------------------------------------------------------------------|
+    |   Dados   |   Frequência | Ponto médio | Frequência relativa | Frequência acumulada | Frequência rel. acumulada       |
+    |   41|--45        7            43                  0,35                7                       0,35                    |
+    |   45|--49        3            47                  0,15                10                      0,50                    |
+    |   49|--53        4            51                  0,20                14                      0,70                    |
+    |   53|--57        1            55                  0,05                15                      0,75                    |
+    |   57|--61        5            59                  0,25                20                      1,00                    |
+    |   Total          20           --                  1,00                --                      ----                    |
+    |-----------------------------------------------------------------------------------------------------------------------|
+
+    Ponto médio -> Valor central desse intervalo
+    Frequência relativa -> quantidade / total
+    Frequência acumulada -> ir somando os valores
+    frequência relativa acumulada -> ir somando a quantidade/total
+    |-- significa que inclui o numero que vem antes de | mas o depois dos -- não

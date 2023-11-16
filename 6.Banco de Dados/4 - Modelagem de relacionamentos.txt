@@ -1,0 +1,42 @@
+Modelagem de relacionamentos
+    Matricula {
+        id_matricula integer
+        id_aluno integer FK references Aluno(id_aluno) 1 - 1
+        validade date
+        preco_da_mensalidade real
+    }
+
+    Aluno {
+        id_aluno integer
+        celular varchar(14)
+        idade smallint
+        nome varchar(40)
+        id_turma integer FK references Turma(id_turma) n - 1
+    }
+
+    Turma {
+        id_turma integer
+        num_alunos smallint
+        tipo_de_curso varchar(20)
+    }
+
+    Professor {
+        id_professor integer
+        nome varchar(40)
+        celular varchar(14)
+        id_disciplina integer FK references Disciplina(id_disciplina) 1 - 1
+    }
+
+    Disciplina {
+        id_disciplina integer
+        nome varchar(40)
+        ementa text
+        id_livro integer FK references Livro(id_livro) 1 - 1
+    }
+
+    Livro {
+        id_livro integer
+        nome varchar(15)
+        autor varchar(40)
+        sinopse varchar(500)
+    }

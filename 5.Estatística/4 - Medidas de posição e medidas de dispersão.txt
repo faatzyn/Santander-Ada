@@ -1,0 +1,111 @@
+Medidas de posição:
+    Moda
+        Valor que ocorre com maior frequência;
+        Bimodal -> Quando empata com outro valor com frequência > 1;
+        amodal -> quando não se tem um valor com frequência > 1;
+
+    Média
+        somatória de todos os valores / quantidade de valores;
+        média é muito sensível para valores discrepantes;
+
+    Mediana
+        posição central dos dados;
+        Exemplo.: [3 5 9] -> o valor central quando os dados estão ordenados -> 5 é a mediana;
+
+    Quartis
+        Pego os dados e divido em quantidades iguais;
+        [1 3 5 6 8 9 11 15 16 18 20] -> mediana = 9 = Q2;
+        Q1 é o ponto central do conjunto anterior a mediana -> [1 3 5 6 8] -> Q1 = 5;
+        Q3 é o ponto central do conjunto posterior a mediana -> [11 15 16 18 20] -> Q3 = 16;
+        Até o Q3 eu tenho 75% dos meus dados;
+        Até o Q2 eu tenho 50% dos meus dados;
+        Até o Q1 eu tenho 25% dos meus dados;
+        IQR = Q3 - Q1;
+
+    Percentis
+        Divido os dados em 100 partes iguais;
+        igual porcentual;
+        Exemplo:
+        Grupo A [3 4 5 6 7]
+            Mediana = 5; Média = 5; Amplitude total = 7 - 3 = 4; n = 5;
+            s = sqrt((x1 - media)² + (x2 - media)² + (x3 - media)² + (x4 - media)² + (x5 - media)² )
+                    (------------------------------------------------------------------------------)
+                    (                                       n - 1                                  )
+
+            s = sqrt(4 + 1 + 0 + 1 + 4 / 4)
+
+            s = sqrt(10 / 4)
+
+            s = sqrt(5/2)
+
+            s = +-1,58 // (desvio padrão)
+
+
+        Grupo B [1 3 5 7 9]
+            Mediana = 5; Média = 5; Amplitude total = 9 - 1 = 8; n = 5;
+            s = sqrt((x1 - media)² + (x2 - media)² + (x3 - media)² + (x4 - media)² + (x5 - media)² )
+                    (------------------------------------------------------------------------------)
+                    (                                       n - 1                                  )
+
+            s = sqrt(16 + 4 + 0 + 4 + 16 / 4)
+
+            s = sqrt(40 / 4)
+
+            s = sqrt(10)
+
+            s = +-3,16 // (desvio padrão)
+
+
+        Grupo C [5 5 5 5 5]
+            Mediana = 5; Média = 5; Amplitude total = 5 - 5 = 0; n = 5;
+            s = sqrt((x1 - media)² + (x2 - media)² + (x3 - media)² + (x4 - media)² + (x5 - media)² )
+                    (------------------------------------------------------------------------------)
+                    (                                       n - 1                                  )
+
+            s = sqrt(0 + 0 + 0 + 0 + 0 / 4)
+
+            s = sqrt(0 / 4)
+
+            s = 0 // (desvio padrão)
+
+            
+        Grupo D [3 5 5 7]
+            Mediana = 5 (qtde par, mediana = media dos valores centrais); Média=5; Atotal(D)=4; n = 4;
+            s = sqrt((x1 - media)² + (x2 - media)² + (x3 - media)² + (x4 - media)² )
+                    (--------------------------------------------------------------)
+                    (                            n - 1                             )
+
+            s = sqrt(4 + 0 + 0 + 4 / 3)
+
+            s = sqrt(8 / 3)
+
+            s = +-1,63 // (desvio padrão)
+
+
+        Grupo E [3 5 5 6 6]
+            Mediana = 5; Média = 5; Amplitude total = 6 - 3 = 3; n = 5;
+            s = sqrt((x1 - media)² + (x2 - media)² + (x3 - media)² + (x4 - media)² + (x5 - media)² )
+                    (------------------------------------------------------------------------------)
+                    (                                       n - 1                                  )
+
+            s = sqrt(4 + 0 + 0 + 1 + 1 / 4)
+
+            s = sqrt(6 / 4)
+
+            s = sqrt(3/2)
+
+            s = +-1,22 // (desvio padrão)
+            
+        
+        s² = Soma(Xi - x^-) / n 
+        onde n^- = media, n = qtde elementos, s² = Variância, s = Desvio Padrão
+
+        s = sqrt(Soma(Xi - x^-) / n)  -> Desvio Padrão populacional
+        s = sqrt(Soma(Xi - x^-) / n-1)  -> Desvio Padrão amostral
+
+
+Medidas de variabilidade ou dispersão:
+    Amplitude total
+        -> Maior diferença do conjunto
+    Variância e Desvio Padrão
+        -> média de desvio dos valores

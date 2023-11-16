@@ -1,0 +1,7 @@
+Editando
+    Comando update 'tabela' set 'campo' = 'valor_campo' where id_tabela = n;
+
+Removendo
+    delete from 'tabela' where id_tabela = n;
+
+Lembrar de semrpe colocar o filtro !!!!!!!

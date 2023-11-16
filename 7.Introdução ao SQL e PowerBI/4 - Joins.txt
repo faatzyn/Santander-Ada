@@ -1,0 +1,16 @@
+Permite relacionar tabelas a partir de uma informação
+    Inner join
+        trás apenas as intersecções das tabelas
+
+    Left join
+        considera a tabela da esquerda como referência, trazendo todas as linhas dela,
+        segunda tabela, caso não tenha dados, deixa os campos como nulo
+
+    Right join
+        considera a tabela da direta como referência, trazendo todas as linhas dela
+        primeira tabela, caso não tenha dados, deixa os campos como nulo
+
+    Full join
+        tras tudo de todas as tabelas, independente se correspondeu ou não
+
+    

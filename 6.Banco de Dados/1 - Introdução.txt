@@ -1,0 +1,17 @@
+Introdução
+    PostgreSQL
+    Modelagem de Dados
+        Exemplo.: Sistema de uma escola
+
+        Modelagem de tabelas
+
+        Relacionamente de tabelas
+
+        Tabelas Normalizadas
+
+    Pratica com um SGBD
+
+    Gerenciar DB
+
+    SGBD
+        Programa que gerencia um banco de dados

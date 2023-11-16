@@ -1,0 +1,10 @@
+Pensando em tabelas com muitas linhas, o desempenho cai muito;
+    uma maneira de aliviar esse problema e utilizar 'indices' -> indexação
+    essa indexação reduz o número de validações necessárias para se chegar ao mesmo resultado;
+
+    como criar esses indices
+    create index idx_nome_campo on 'tabela'(nome_campo);
+
+    Por que não usar indices em todas as colunas?
+        Tabelas muito selecionadas é uma boa ideia usar indices;
+        Tabelas com muita escrita acaba sendo necessário ficar recalculando os indices;
